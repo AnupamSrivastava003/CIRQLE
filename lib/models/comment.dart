@@ -1,0 +1,45 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+class Comment {
+  final String id;
+  final String postId;
+  final String uid;
+  final String name;
+  final String username;
+  final String message;
+  final Timestamp timestamp;
+
+  Comment(
+      {required this.id,
+      required this.uid,
+      required this.postId,
+      required this.message,
+      required this.name,
+      required this.timestamp,
+      required this.username});
+
+  // convert firestore data into a comment object
+  factory Comment.fromDocument(DocumentSnapshot doc) {
+    return Comment(
+      id: doc.id,
+      postId: doc['postId'],
+      uid: doc['uid'],
+      name: doc['name'],
+      username: doc['username'],
+      message: doc['message'],
+      timestamp: doc['timestamp'],
+    );
+  }
+
+  // convert an object into a map
+  Map<String, dynamic> toMap() {
+    return {
+      'postId': postId,
+      'uid': uid,
+      'name': name,
+      'username': username,
+      'message': message,
+      'timestamp': timestamp,
+    };
+  }
+}

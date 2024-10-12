@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831881348142",
+    "project_id": "cirqle-d3015",
+    "storage_bucket": "cirqle-d3015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831881348142:android:06aae2b5eb483de92fcbbf",
+        "android_client_info": {
+          "package_name": "app.anupam.cirqle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgN6vDJhL3qfI4Q8P1FSyKiOUD9Q2O0j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
